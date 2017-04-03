@@ -1,0 +1,10 @@
+name: bootstrap
+title: InSpec Bootstrap Profile
+maintainer: levon.becker.github@bonusbits.com
+copyright: Bonus Bits
+copyright_email: levon.becker.github@bonusbits.com
+license: MIT license
+summary: Check Pre-Configuration Manager Configurations
+version: 1.0.0
+supports:
+  - os-family: unix
