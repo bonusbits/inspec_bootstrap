@@ -4,7 +4,7 @@ chef_version = attribute('chef_version', default: '12.18.31', description: 'Chef
 if inspec_chef
   describe 'Chef Client' do
     it "chef client version: #{chef_version}" do
-      expect(command('knife -v').stdout).to include(chef_version)
+      expect(command('/opt/chef/embedded/bin/knife -v').stdout).to include(chef_version)
     end
   end
 end
