@@ -1,22 +1,14 @@
-machine:
-  ruby:
-    version: '2.3.1'
-  timezone:
-    America/Los_Angeles
-
-dependencies:
-  override:
-  - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3:
-      timeout: 900
-
-test:
-  override:
-  - bundle exec rake circleci:
-      parallel: false
-      timeout: 900
-
+version: 2
+jobs:
+  build:
+    working_directory: ~/circulate
+    docker:
+      - image: chef/chefdk:1.2.22
+    steps:
+      - checkout
+      - run:
+          name: Run CircleCI Rake Task
+          command: /opt/chefdk/embedded/bin/rake circleci --trace
 notify:
   webhooks:
-    # A list of hook hashes, containing the url field
-    # gitter hook
-    - url: https://webhooks.gitter.im/e/1de88ab20a320bd6d440
+    - url: https://webhooks.gitter.im/e/cf84bd37a43b066fb883
