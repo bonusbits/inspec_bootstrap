@@ -1,8 +1,8 @@
 # InSpec Bootstrapping Profile
 [![CircleCI](https://circleci.com/gh/bonusbits/inspec_bootstrap.svg?style=shield)](https://circleci.com/gh/bonusbits/inspec_bootstrap)
-[![Join the chat at https://gitter.im/bonusbits/inspec_bootstrap](https://badges.gitter.im/bonusbits/inspec_bootstrap.svg)](https://gitter.im/bonusbits/inspec_bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/bonusbits](https://badges.gitter.im/bonusbits/bonusbits.svg)](https://gitter.im/bonusbits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Used to check basic bootstrapping configurations. 
+Used to check basic bootstrapping configurations.
 These are usually items that come before a configuration manager is utilized.
 Which could be specific packages installed such as cfn-init or verifying the version of the configuration manager such as Chef client.
 
