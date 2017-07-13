@@ -1,4 +1,6 @@
 # InSpec Bootstrapping Profile
+
+[![Join the chat at https://gitter.im/bonusbits/inspec_bootstrap](https://badges.gitter.im/bonusbits/inspec_bootstrap.svg)](https://gitter.im/bonusbits/inspec_bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI](https://circleci.com/gh/bonusbits/inspec_bootstrap.svg?style=shield)](https://circleci.com/gh/bonusbits/inspec_bootstrap)
 [![Join the chat at https://gitter.im/bonusbits](https://badges.gitter.im/bonusbits/bonusbits.svg)](https://gitter.im/bonusbits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
