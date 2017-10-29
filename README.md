@@ -48,4 +48,4 @@ suites:
 | Attribute      | Type     | Default       |
 | :------------- |:-------- | :------------ |
 | inspec_chef    | Boolean  | true          |
-| chef_version   | String   | 12.19.36      |
+| chef_version   | String   | 12.21.4       |
