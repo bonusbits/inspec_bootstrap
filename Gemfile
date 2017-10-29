@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rake', '~> 12.0.0'
+gem 'inspec', '~> 1.25.0'
+gem 'rake', '~> 10.5'
 
 group :style do
-  gem 'rubocop', '~> 0.46.0'
+  gem 'rubocop', '~> 0.47.0'
 end

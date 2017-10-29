@@ -5,6 +5,6 @@ copyright: Bonus Bits
 copyright_email: levon.becker.github@bonusbits.com
 license: MIT license
 summary: Check Pre-Configuration Manager Configurations
-version: 1.0.0
+version: 1.0.1
 supports:
   - os-family: unix

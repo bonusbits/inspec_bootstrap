@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circulate
     docker:
-      - image: chef/chefdk:1.2.22
+      - image: chef/chefdk:1.6.1
     steps:
       - checkout
       - run:
