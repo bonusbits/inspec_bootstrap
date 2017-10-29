@@ -1,6 +1,6 @@
 # CHANGE LOG
 
-## 1.0.2 - 04/09/2017 - Levon Becker
+## 1.0.2 - 10/28/2017 - Levon Becker
 * Added knife path discovery logic
 * Switched CircleCI container to ChefDK 1.6.1
 * Added Gemfile.lock to keep CircleCI in line
