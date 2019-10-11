@@ -1,15 +1,21 @@
 # CHANGE LOG
 
-## 2.0.0 - 10/10/2019 - Levon Becker
+## 2.0.1 - TODO List - Levon Becker
+* Get jUnit test results working for rubocop rake task
+
+## 2.0.0 - 10/11/2019 - Levon Becker
 * Updated CircleCI 2.1
 * Updated to ChefDK 4.3.13 bundle
     * Ruby 2.6.3
     * rubocop 0.72.0
 * Renamed chef_client to chef to cover all Chef testing
-* Converted to controls
+* Wrapped logic with control syntax. Can now call specific controls and ignore inspec attributes.
 * Added ChegDK version test and control
 * Added stub attrs.yml
-* Renamed some attributes so it's not backwards compatible hince the major version rev  
+* Renamed some attributes so it's not backwards compatible hence the major version rev  
+* Removed Windows support
+* Added Inspec Version check to inspec.yml
+* Updated os method calls to work with newer version and discover Amazon Linux correctly again
 
 ## 1.0.2 - 10/28/2017 - Levon Becker
 * Added knife path discovery logic

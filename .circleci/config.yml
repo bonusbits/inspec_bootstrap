@@ -13,20 +13,23 @@ jobs:
       GEM_ROOT: /opt/chefdk/embedded/lib/ruby/gems/2.6.0
     steps:
       - checkout
-      - run:
-          name: Debug Outputs
-          command: |
-            env
-            which ruby
-            which gem
-            ruby -v
-            chef -v
-      - run:
-          name: Create Reports Directory
-          command: mkdir reports
+      #- run:
+      #    name: Debug Outputs
+      #    command: |
+      #      env
+      #      which ruby
+      #      which gem
+      #      ruby -v
+      #      chef -v
+      #- run:
+      #    name: Install Rspec Junit Formatter Gem
+      #    command: gem install rspec_junit_formatter -v 0.4.1
       - run:
           name: Run Rake Task
           command: /opt/chefdk/embedded/bin/rake style:ruby --trace
+      - run:
+          name: Create Reports Directory
+          command: mkdir reports
       - store_test_results:
           path: reports/
 
