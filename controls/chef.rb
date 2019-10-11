@@ -31,7 +31,7 @@ end
 control 'chefdk' do
   impact 1.0
   title ''
-  only_if { inspec_chef && File.directory?('/opt/chefdk')}
+  only_if { inspec_chef && File.directory?('/opt/chefdk') }
 
   describe command('/opt/chefdk/embedded/bin/chef -v') do
     its(:exit_status) { should eq 0 }

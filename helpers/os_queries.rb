@@ -1,11 +1,11 @@
 # os helpers beyond built-in methods
 
 def rhel_family?
-  %w(redhat amazon).include?(os[:family])
+  %w[redhat amazon].include?(os[:family])
 end
 
 def debian_family?
-  %w(debian ubuntu).include?(os[:family])
+  %w[debian ubuntu].include?(os[:family])
 end
 
 def amazon_linux?
@@ -13,7 +13,7 @@ def amazon_linux?
 end
 
 def ubuntu?
-  %w(ubuntu).include?(os[:family])
+  %w[ubuntu].include?(os[:family])
 end
 
 def rhel6?

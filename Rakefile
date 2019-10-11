@@ -11,4 +11,4 @@ namespace :style do
 end
 
 desc 'Rubocop'
-task default: %w(style:ruby)
+task default: %w[style:ruby:auto_correct]
