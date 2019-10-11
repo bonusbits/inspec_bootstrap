@@ -17,6 +17,9 @@ jobs:
           name: Create Reports Directory
           command: mkdir reports
       - run:
+          name: Install Junit Formatter Gem
+          command: /opt/chefdk/embedded/bin/ruby install rspec_junit_formatter -v 0.4.1
+      - run:
           name: Debug Outputs
           command: |
             env
