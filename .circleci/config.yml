@@ -14,18 +14,19 @@ jobs:
     steps:
       - checkout
       - run:
+      name: Debug Outputs
+      command: |
+        env
+        which ruby
+        which gem
+        ruby -v
+        chef -v
+      - run:
           name: Create Reports Directory
           command: mkdir reports
       - run:
           name: Install Junit Formatter Gem
-          command: /opt/chefdk/embedded/bin/ruby install rspec_junit_formatter -v 0.4.1
-      - run:
-          name: Debug Outputs
-          command: |
-            env
-            which ruby
-            ruby -v
-            chef -v
+          command: /opt/chefdk/embedded/bin/gem install rspec_junit_formatter -v 0.4.1
       - run:
           name: Run Rake Task
           command: /opt/chefdk/embedded/bin/rake style:ruby --trace
