@@ -41,7 +41,7 @@ suites:
           git: https://github.com/bonusbits/inspec_bootstrap.git
           release: 2.0.0
       attributes:
-        chefdk_version: 4.3.13
+        chef_dk_version: 4.3.13
         chef_client_version: 15.2.20
 ```
 
