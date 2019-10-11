@@ -1,3 +1,6 @@
+# For CircleCI
+require 'bundler/setup'
+
 # Style tests. Rubocop
 namespace :style do
   require 'rubocop/rake_task'
@@ -9,6 +12,3 @@ end
 
 desc 'Rubocop'
 task default: %w(style:ruby)
-
-desc 'Circle CI Tasks'
-task circleci: %w(style:ruby)

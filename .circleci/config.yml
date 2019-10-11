@@ -1,0 +1,34 @@
+version: 2.1
+timezone:
+  America/Los_Angeles
+
+jobs:
+  style_ruby:
+    docker:
+      - image: chef/chefdk:4.3.13
+    working_directory: ~/circulate
+    environment:
+      GEM_HOME: /opt/chefdk/embedded/lib/ruby/gems/2.6.0/gems
+      GEM_PATH: /opt/chefdk/embedded/lib/ruby/gems/2.6.0
+      GEM_ROOT: /opt/chefdk/embedded/lib/ruby/gems/2.6.0
+    steps:
+      - checkout
+      - run:
+          name: Create Reports Directory
+          command: mkdir reports
+      - run:
+          name: Run Rake Task
+          command: /opt/chefdk/embedded/bin/rake style:ruby --trace
+      - store_test_results:
+          path: reports/
+
+workflows:
+  version: 2.1
+  # Put in one because not paying for parallel jobs
+  style_tests:
+    jobs:
+    - style_ruby
+
+notify:
+  webhooks:
+    - url: https://webhooks.gitter.im/e/cf84bd37a43b066fb883

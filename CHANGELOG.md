@@ -1,5 +1,16 @@
 # CHANGE LOG
 
+## 2.0.0 - 10/10/2019 - Levon Becker
+* Updated CircleCI 2.1
+* Updated to ChefDK 4.3.13 bundle
+    * Ruby 2.6.3
+    * rubocop 0.72.0
+* Renamed chef_client to chef to cover all Chef testing
+* Converted to controls
+* Added ChegDK version test and control
+* Added stub attrs.yml
+* Renamed some attributes so it's not backwards compatible hince the major version rev  
+
 ## 1.0.2 - 10/28/2017 - Levon Becker
 * Added knife path discovery logic
 * Switched CircleCI container to ChefDK 1.6.1
