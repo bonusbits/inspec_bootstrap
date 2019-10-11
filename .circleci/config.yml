@@ -18,7 +18,8 @@ jobs:
           command: mkdir reports
        - run:
           name: Debug Outputs
-          command: env && which ruby
+          command: |
+            env
       - run:
           name: Run Rake Task
           command: /opt/chefdk/embedded/bin/rake style:ruby --trace
